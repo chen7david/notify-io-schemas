@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/chen7david/notify-io-schemas/issues"
   },
-  "homepage": "https://github.com/chen7david/notify-io-schemas#readme"
+  "homepage": "https://github.com/chen7david/notify-io-schemas#readme",
+  "dependencies": {
+    "notify-io": "0.0.5"
+  }
 }

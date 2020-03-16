@@ -1,5 +1,5 @@
-# notify-io-schemas
-notify-io-schemas usage
+# Notify-IO Schemas
+Notify-IO Schemas are predefined schemas that can be easily included in your projects.
 
 ```js
 const { NotifyIO, SchemaBuilder } = require('notify-io')

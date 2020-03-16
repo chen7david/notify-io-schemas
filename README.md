@@ -24,6 +24,7 @@ output:
 ```js
 {
   lang: 'en',
-  messages: [ { message: 'password is required' } ]
+  state: 'validation',
+  messages: [ { message: 'password is required', key: 'password' } ]
 }
 ```

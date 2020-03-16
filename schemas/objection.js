@@ -1,7 +1,9 @@
-let { SchemaBuilder } = require('notify-io')
+module.exports = (SchemaBuilder) => {
 
-schema = new SchemaBuilder()
+    const schema = new SchemaBuilder()
 
+    // define schemas here ...
 
+    return schema
 
-module.exports = schema
+}

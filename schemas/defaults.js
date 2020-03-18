@@ -3,8 +3,8 @@ module.exports = (SchemaBuilder) => {
     const schema = new SchemaBuilder()
 
     schema.create('unknown', {
-        en: (code) =>`unknown error, something went wrong - ${code}`,
-        zh: (code) =>`服务器有误 - ${code}`,
+        en: (code) =>`unknown error, something went wrong - ER${code}`,
+        zh: (code) =>`服务器有误 - ER${code}`,
     })
 
     schema.create('invalid', {

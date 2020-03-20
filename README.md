@@ -2,17 +2,17 @@
 Notify-IO Schemas are predefined schemas that can be easily included in your projects.
 
 ```js
-const { NotifyIO, SchemaBuilder } = require('notify-io')
-const { ObjectionSchema, JoiSchema } = require('notify-io-schemas')
+const { Notify, SchemaBuilder } = require('notify-io')
+const { ObjectionSchema, JoiSchema, DefaultSchema } = require('notify-io-schemas')
 
 const schema = new SchemaBuilder().merege({
     ObjectionSchema: ObjectionSchema(SchemaBuilder),
     JoiSchema: JoiSchema(SchemaBuilder),
 })
 
-NotifyIO.loadSchema(schema)
+Notify.loadSchema(schema)
 
-const notify = new NotifyIO('validation')
+const notify = new Notify('validation')
 notify
     .message('any.required', 'password', 'password')
 
@@ -25,6 +25,8 @@ output:
 {
   lang: 'en',
   state: 'validation',
-  messages: [ { message: 'password is required', key: 'password' } ]
+  messages: [
+    { message: 'password is required', key: 'password' }
+  ]
 }
 ```

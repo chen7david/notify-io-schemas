@@ -18,7 +18,6 @@ notify
 
 console.log(notify)
 ```
-
 output:
 
 ```js
@@ -29,4 +28,5 @@ output:
     { message: 'password is required', key: 'password' }
   ]
 }
+
 ```

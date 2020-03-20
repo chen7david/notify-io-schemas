@@ -17,6 +17,11 @@ module.exports = (SchemaBuilder) => {
         zh: (noun) =>`${noun}不正确`,
     })
 
+    schema.create('required', {
+        en: (noun) =>`${noun} required!`,
+        zh: (noun) =>`要求${noun}`,
+    })
+
     schema.create('login', {
         en: (noun) =>`welcome back ${noun}!`,
         zh: (noun) =>`欢迎${noun}`,

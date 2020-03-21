@@ -17,6 +17,7 @@ notify
     .message('any.required', 'password', 'password')
 
 console.log(notify)
+console.log(schema.keys()) // to see all the keys registered on a schema
 ```
 output:
 

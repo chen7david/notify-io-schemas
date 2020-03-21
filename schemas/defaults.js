@@ -6,7 +6,7 @@ module.exports = (SchemaBuilder) => {
         en: (code) =>`unknown error, something went wrong - ER${code}`,
         zh: (code) =>`服务器有误 - ER${code}`,
     })
-
+    
     schema.create('invalid', {
         en: (noun) =>`invalid ${noun}!`,
         zh: (noun) =>`${noun}格式有误`,
@@ -15,6 +15,11 @@ module.exports = (SchemaBuilder) => {
     schema.create('incorrect', {
         en: (noun) =>`incorrect ${noun}!`,
         zh: (noun) =>`${noun}不正确`,
+    })
+
+    schema.create('forbidden', {
+        en: (noun) =>`forbidden ${noun}!`,
+        zh: (noun) =>`${noun}禁止`,
     })
 
     schema.create('required', {

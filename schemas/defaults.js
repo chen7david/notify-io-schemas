@@ -6,6 +6,11 @@ module.exports = (SchemaBuilder) => {
         en: (code) =>`unknown error, something went wrong - ER${code}`,
         zh: (code) =>`服务器有误 - ER${code}`,
     })
+
+    schema.create('undefinded', {
+        en: (noun) =>`${noun} is not definded`,
+        zh: (noun) =>`${noun}未被定义`,
+    })
     
     schema.create('invalid', {
         en: (noun) =>`invalid ${noun}!`,

@@ -12,14 +12,39 @@ module.exports = (SchemaBuilder) => {
         zh: (noun) => `${noun}不能为空`,
     })
 
+    schema.create('string.base', {
+        en: (noun) => `${noun} must be a string`, 
+        zh: (noun) => `${noun}必须是字符串`,
+    })
+
+    schema.create('object.base', {
+        en: (noun) => `${noun} must be an object`, 
+        zh: (noun) => `${noun}必须是对象值`,
+    })
+
+    schema.create('object.empty', {
+        en: (noun) => `${noun} is not allowed to be empty`, 
+        zh: (noun) => `${noun}不能为空`,
+    })
+
     schema.create('boolean.base', {
         en: (noun) => `${noun} must be a boolean`, 
         zh: (noun) => `${noun}必须是布尔值`,
     })
 
+    schema.create('boolean.empty', {
+        en: (noun) => `${noun} is not allowed to be empty`, 
+        zh: (noun) => `${noun}不能为空`,
+    })
+
     schema.create('number.base', {
         en: (noun) => `${noun} must be a number`, 
         zh: (noun) => `${noun}必须是数字`,
+    })
+
+    schema.create('number.empty', {
+        en: (noun) => `${noun} is not allowed to be empty`, 
+        zh: (noun) => `${noun}不能为空`,
     })
 
     schema.create('array.base', {

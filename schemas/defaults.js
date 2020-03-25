@@ -7,6 +7,11 @@ module.exports = (SchemaBuilder) => {
         zh: (code) =>`服务器有误 - ER${code}`,
     })
 
+    schema.create('custom', {
+        en: (message) =>`${message}`,
+        zh: (message) =>`${message}`,
+    })
+
     schema.create('undefinded', {
         en: (noun) =>`${noun} is not definded`,
         zh: (noun) =>`${noun}未被定义`,
@@ -15,6 +20,16 @@ module.exports = (SchemaBuilder) => {
     schema.create('invalid', {
         en: (noun) =>`invalid ${noun}!`,
         zh: (noun) =>`${noun}格式有误`,
+    })
+
+    schema.create('incomplete', {
+        en: (noun) =>`incomplete ${noun}!`,
+        zh: (noun) =>`${noun}未完成`,
+    })
+
+    schema.create('completed', {
+        en: (noun) =>`completed ${noun}!`,
+        zh: (noun) =>`${noun}完成`,
     })
 
     schema.create('incorrect', {
